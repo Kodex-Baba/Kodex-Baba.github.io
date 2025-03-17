@@ -3,9 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kodex Baba Portfolio</title>
 </head>
+<header>
+    <nav>
+        <ol>
+            <li><a href="#top">Top of the page</a></li>
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#documents">Resume</a></li>
+            <li><a href="#academic-credentials">Academics</a></li>
+            <li><a href="#professional-summary">Admissions</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <!--<li><a href="assignment02-reflection.html">Reflection page</a></li>
+            <li><a href="assets/css/style.css">CSS</a></li>-->
+        </ol>
+    </nav>
+</header>
 <body>
-    <h1>Welcome to my new portfolio!</h1>
+    <section id="bio">
+        <img src="assets/img/kodex-sunglasses.jpg" alt="Your Profile Picture" class="profile-img">
+        <div class="profile-container">
+
+            <div class="profile-summary">
+                <h2>Hi, I'm Akorede</h2>
+                <p>I'm a soon-to-be graduate passionate about full-stack development. I specialize in web and mobile app development using React, React Native, and ASP.NET, with experience in backend systems and microservice architectures.</p>
+                <p>I enjoy solving complex problems, building scalable solutions, and continuously learning new technologies. Excited to contribute and grow as a developer!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents">
+        <h2>My Documents</h2>
+        <p>View or download my resume and cover letter below.</p>
+
+        <div class="document-container">
+            <!-- Resume -->
+            <div class="document-card">
+                <h3>📄 Resume</h3>
+                <iframe src="assets/docs/resume.pdf" width="100%" height="250px"></iframe>
+                <a href="assets/docs/resume.pdf" download target="_blank" class="download-btn">Download Resume</a>
+            </div>
+
+            <!-- Cover Letter -->
+            <!--<div class="document-card">
+                <h3>📄 Cover Letter</h3>
+                <iframe src="assets/docs/coverletter.pdf" width="100%" height="250px"></iframe>
+                <a href="assets/docs/coverletter.pdf" download target="_blank" class="download-btn">Download Cover Letter</a>
+            </div>-->
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>Technology is more than just code and systems. It is a tool for solving real-world problems and shaping the future. I believe in continuous learning, innovation, and the power of collaboration to build solutions that are efficient, scalable, and impactful. Every challenge is an opportunity to grow, and every project is a step towards making a meaningful difference. As I navigate my career, my goal is to contribute to technology that enhances lives while pushing the boundaries of what’s possible</p>
+    </section>
+
+    <!-- Academics -->
+    <section id="academic-credentials">
+        <h2 class="section-title">Academic Credentials</h2>
+        <div class="credentials-container">
+            <a href="certificates-link" class="button">View Certificates</a>
+            <a href="transcript-link" class="button">View Transcript</a>
+        </div>
+    </section>
+
+    <section id="academic-work-samples">
+        <h2 class="section-title">Academic Work Samples</h2>
+        <div class="work-samples-container">
+            <div class="work-sample-card">
+                <img src="assets/img/acad/employee_Manangement_system.png" alt="Project Preview">
+                <h3>Employee Manager</h3>
+                <p> A Console Based Application written in Python Programming Languag</p>
+                <a href="https://github.com/Kodex-Baba/EmployeeManager" class="button">View Work</a>
+                <a href="https://youtu.be/1VAcohSV-bA" class="button">Watch Presentation</a>
+            </div>
+            <div class="work-sample-card">
+                <img src="assets/img/acad/webdev-asp.png" alt="Project Preview">
+                <h3>Web App Dev (ASP.NET)</h3>
+                <p>A retrospective on what was learned about role managements</p>
+                <a href="https://github.com/Kodex-Baba/COMP2139_Lab1" class="button">View Work</a>
+                <a href="https://youtu.be/ON2zuS78U7c" class="button">Watch Presentation</a>
+            </div>
+            <div class="work-sample-card">
+                <img src="assets/img/acad/microService.png" alt="Project Preview">
+                <h3>MicroService Architecture</h3>
+                <p>Showcasing microservice communication authentication</p>
+                <a href="https://github.com/Kodex-Baba/Comp3095-Web_App_Dev" class="button">View Work</a>
+                <a href="https://youtu.be/ON2zuS78U7c" class="button">Watch Presentation</a>
+            </div>
+            <div class="work-sample-card">
+                <img src="assets/img/acad/microService.png" alt="Project Preview">
+                <h3>MicroService Architecture</h3>
+                <p>Showcasing microservice communication authentication</p>
+                <a href="https://github.com/Kodex-Baba/Comp3095-Web_App_Dev" class="button">View Work</a>
+                <a href="https://youtu.be/ON2zuS78U7c" class="button">Watch Presentation</a>
+            </div>
+            <div class="work-sample-card">
+                <img src="assets/img/acad/microService.png" alt="Project Preview">
+                <h3>MicroService Architecture</h3>
+                <p>Showcasing microservice communication authentication</p>
+                <a href="https://github.com/Kodex-Baba/Comp3095-Web_App_Dev" class="button">View Work</a>
+                <a href="https://youtu.be/ON2zuS78U7c" class="button">Watch Presentation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="capstone-documents">
+        <h2>Capstone Project Documents</h2>
+        <div class="documents-container">
+            <div class="document-card">
+                <h3>Project Summary</h3>
+                <iframe src="path/to/project-summary.pdf"></iframe>
+                <a href="path/to/project-summary.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Project Vision</h3>
+                <iframe src="path/to/project-vision.pdf"></iframe>
+                <a href="path/to/project-vision.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Project/Business Requirements</h3>
+                <iframe src="path/to/project-requirements.pdf"></iframe>
+                <a href="path/to/project-requirements.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Project Plan</h3>
+                <iframe src="path/to/project-plan.pdf"></iframe>
+                <a href="path/to/project-plan.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Requirements Analysis & Design</h3>
+                <iframe src="path/to/requirements-design.pdf"></iframe>
+                <a href="path/to/requirements-design.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Wireframes/Mockups</h3>
+                <iframe src="path/to/wireframes.pdf"></iframe>
+                <a href="path/to/wireframes.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>Status Reports</h3>
+                <iframe src="path/to/status-reports.pdf"></iframe>
+                <a href="path/to/status-reports.pdf" download class="download-btn">Download</a>
+            </div>
+            <div class="document-card">
+                <h3>System Implementation</h3>
+                <iframe src="path/to/system-implementation.pdf"></iframe>
+                <a href="path/to/system-implementation.pdf" download class="download-btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="professional-summary">
+        <h2 class="section-title">Professional Summary</h2>
+
+        <!-- Professional Work Samples -->
+        <div id="professional-work-samples" class="work-samples-container">
+            <div class="work-sample-card">
+                <img src="work-sample1.jpg" alt="Work Sample Preview">
+                <h3>Project Title 1</h3>
+                <p>A short description of the project or work sample. Highlight your role and the impact of the project.</p>
+                <a href="project-link" class="button">View Work</a>
+                <a href="presentation-link" class="button">Watch Presentation</a>
+            </div>
+            <div class="work-sample-card">
+                <img src="work-sample2.jpg" alt="Work Sample Preview">
+                <h3>Project Title 2</h3>
+                <p>A short description of the project or work sample. Mention the technologies used and any notable achievements.</p>
+                <a href="project-link" class="button">View Work</a>
+                <a href="presentation-link" class="button">Watch Presentation</a>
+            </div>
+        </div>
+
+        <!-- Community Service/Volunteer Work -->
+        <div id="community-service" class="volunteer-container">
+            <h3 class="section-subtitle">Community Service & Volunteer Work</h3>
+            <div class="volunteer-card">
+                <h4>Role at Organization</h4>
+                <p>Description of volunteer work, including impact and skills developed.</p>
+                <small>Duration: Jan 2021 - Dec 2022</small>
+            </div>
+            <!--<div class="volunteer-card">
+                <h4>Another Role</h4>
+                <p>Details of community involvement and any significant achievements.</p>
+                <small>Duration: Mar 2020 - Nov 2021</small>
+            </div>-->
+        </div>
+
+        <!-- Letters of Recommendation -->
+        <div id="recommendations" class="documents-container">
+            <h3 class="section-subtitle">Letters of Recommendation</h3>
+            <div class="document-card">
+                <h4>Letter from Professor XYZ</h4>
+                <iframe src="path/to/letter1.pdf" width="100%" height="250px"></iframe>
+                <a href="path/to/letter1.pdf" download class="download-btn">Download Letter</a>
+            </div>
+            <!--<div class="document-card">
+                <h4>Letter from Supervisor ABC</h4>
+                <iframe src="path/to/letter2.pdf" width="100%" height="250px"></iframe>
+                <a href="path/to/letter2.pdf" download class="download-btn">Download Letter</a>
+            </div>-->
+        </div>
+
+        <!-- Awards and Recognition -->
+        <div id="awards" class="awards-container">
+            <h3 class="section-title"> Awards </h3>
+            <div class="award-card">
+                <h4>Award Name</h4>
+                <p>Brief description of the award and what it was for.</p>
+                <small>Issued by: Organization Name</small>
+            </div>
+            <!--<div class="award-card">
+                <h4>Another Award</h4>
+                <p>Short description of the award and its significance.</p>
+                <small>Issued by: Organization Name</small>
+            </div>-->
+        </div>
+    </section>
 </body>
 </html>

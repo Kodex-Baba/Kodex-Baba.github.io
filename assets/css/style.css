@@ -1,0 +1,453 @@
+@import 'variable.css'; /* Importing variable file */
+
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700; /* Bold */
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400; /* Regular */
+}
+
+small {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300; /* Light */
+}
+
+/* ===== Header ===== */
+
+header{
+    padding: 0px;
+
+    position: sticky;
+    top: 18px;
+    background-image: linear-gradient(to bottom,#002349,#0A1828);
+}
+nav {
+    text-align: center;
+    margin: auto;
+}
+
+nav li {
+    list-style: none;
+    color: cadetblue;
+    display: inline-block;
+    margin: 20px;
+    padding: .5em;
+
+
+}
+nav li a{
+    text-decoration: none;
+    text-align: center;
+    color: #178582;
+}
+nav li a:hover {
+    color: #D4AF37;
+    text-decoration: underline #dcb58d;
+}
+
+/* =================================== Bio ============================================ */
+#bio {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    width: 100%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.profile-summary {
+    max-width: 600px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.profile-summary h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+.profile-summary p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.profile-summary p:first-of-type {
+    margin-top: 0;
+}
+
+.profile-summary p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* =================================== Documents ============================================ */
+
+#documents {
+    text-align: center;
+    padding: 40px;
+}
+
+.document-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.document-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.document-card h3 {
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--color-accent);
+    color: black;
+}
+
+/* =================================== Quote ============================================ */
+
+.quote {
+    color: #178582;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the block */
+    padding: 20px;
+}
+
+/* ======================================== Academics ============================================ */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.credentials-container, .work-samples-container, .capstone-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-sample-card, .capstone-card {
+    background: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.work-sample-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* =================================== Capstone Documents ============================================ */
+#capstone-documents {
+    padding: 40px;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+#capstone-documents h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+/* The container for the documents will scroll horizontally */
+.documents-container {
+    display: flex;
+    gap: 20px; /* space between document cards */
+    overflow-x: auto; /* enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* for smooth snap scrolling */
+    padding-bottom: 20px; /* space at the bottom */
+}
+
+.document-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* This is the max width for each card */
+    text-align: center;
+    flex-shrink: 0;
+    scroll-snap-align: start; /* ensures the cards align to the left when scrolling */
+}
+
+.document-card iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--color-accent);
+    color: black;
+}
+
+
+
+.button {
+    display: block;
+    background: var(--color-accent);
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* =================================== Professional Summary ============================================ */
+#professional-summary {
+    padding: 40px;
+    background-color: var(--color-background);
+}
+
+#professional-summary .section-title {
+    font-size: 2rem;
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Work Samples */
+#professional-work-samples {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-sample-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+.work-sample-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.work-sample-card h3 {
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.work-sample-card p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+/* Volunteer Work */
+.volunteer-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.volunteer-container .section-subtitle {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.volunteer-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.volunteer-card h4 {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.volunteer-card p {
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.volunteer-card small {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+}
+
+/* Letters of Recommendation */
+/* =================================== Letters of Recommendation ============================================ */
+#recommendations {
+    text-align: center;
+    padding: 40px;
+}
+
+#recommendations .section-subtitle {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.document-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.document-card h4 {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.document-card iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 4px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--color-accent);
+    color: black;
+}
+
+
+/* Awards and Recognition */
+#awards {
+    text-align: center;
+    padding: 40px;
+}
+
+.awards-container .section-subtitle {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.award-card {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 10px auto;
+}
+
+.award-card h4 {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.award-card p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.award-card small {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+}
